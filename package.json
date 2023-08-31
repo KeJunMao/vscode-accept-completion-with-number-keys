@@ -1,0 +1,115 @@
+{
+  "publisher": "kejun",
+  "name": "vscode-accept-completion-with-number-keys",
+  "displayName": "accept Completion With Number Keys",
+  "version": "0.0.3",
+  "private": true,
+  "packageManager": "pnpm@8.3.1",
+  "description": "Name your color and mom will never have to worry about what that color is for again",
+  "author": "KeJun <kejun1997@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/kejunmao/what-color-is-this#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kejunmao/what-color-is-this"
+  },
+  "bugs": {
+    "url": "https://github.com/kejunmao/what-color-is-this/issues"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/index.js",
+  "icon": "res/logo.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "num.1",
+        "key": "1",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.2",
+        "key": "2",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.3",
+        "key": "3",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.4",
+        "key": "4",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.5",
+        "key": "5",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.6",
+        "key": "6",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.7",
+        "key": "7",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.8",
+        "key": "8",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.9",
+        "key": "9",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      },
+      {
+        "command": "num.0",
+        "key": "0",
+        "when": "editorTextFocus && suggestWidgetVisible"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --external vscode",
+    "dev": "nr build --watch",
+    "lint": "eslint .",
+    "vscode:prepublish": "nr build",
+    "publish": "vsce publish --no-dependencies",
+    "pack": "vsce package --no-dependencies",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
+    "@antfu/ni": "^0.21.3",
+    "@types/node": "^18.16.1",
+    "@types/vscode": "^1.77.0",
+    "@vue/reactivity": "^3.2.47",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.39.0",
+    "esno": "^0.16.3",
+    "pnpm": "^8.3.1",
+    "rimraf": "^5.0.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.3",
+    "vitest": "^0.30.1",
+    "vsce": "^2.15.0"
+  }
+}
