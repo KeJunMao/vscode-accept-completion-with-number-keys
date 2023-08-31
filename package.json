@@ -100,6 +100,7 @@
     "@antfu/ni": "^0.21.3",
     "@types/node": "^18.16.1",
     "@types/vscode": "^1.77.0",
+    "@vscode/vsce": "^2.21.0",
     "@vue/reactivity": "^3.2.47",
     "bumpp": "^9.1.0",
     "eslint": "^8.39.0",
