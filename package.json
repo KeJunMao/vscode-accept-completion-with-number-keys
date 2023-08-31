@@ -2,7 +2,7 @@
   "publisher": "kejun",
   "name": "vscode-accept-completion-with-number-keys",
   "displayName": "accept Completion With Number Keys",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@8.3.1",
   "description": "Name your color and mom will never have to worry about what that color is for again",
